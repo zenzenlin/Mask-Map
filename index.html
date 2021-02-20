@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywordes" content="口罩查詢,藥局口罩,口罩,領口罩">
+    <meta name="description" content="口罩數量以藥局實際存量為主，線上查詢之數量僅供參考">
+    <meta property="og:title" content="口罩地圖">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="藥局口罩數量查詢">
+    <meta property="og:image" content="https://i.imgur.com/q9vsIYq.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="https://i.imgur.com/HlvbSDK.png">
+    <title>Mask Map</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css">
+    </link>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css">
+    </link>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h1 class="titleEn">Mask Map</h1>
+            <h1 class="titleCn"><span>口罩</span>地圖</h1>
+        </div>
+
+        <div class="main">
+            <div class="info">
+                <div class="infoTop"></div>
+                <h2 class="todayCn"></h2>
+                <h5 class="todayNum"></h5>
+                <p class="id">身分證末碼為 <span class="buyId"></span> 可購買</p>
+                <select name="county" class="county"></select>
+                <select name="town" class="town"></select>
+            </div>
+
+            <div class="info infoList">
+                <ul class="infoMenu">
+                    <!-- <li>
+                  <h6>ＸＸ藥局</h6>
+                  <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png" alt="marker" class="marker_icon"alt="">
+                  <p class="address">114 內湖區</p>
+                  <p class="phone">02 29819222</p>
+                  <p class="openTime">營業中 09:00-22:00</p>
+                  <div class="adultMask">成人口罩<span class="adultMaskNumber">200</span></div>
+                  <div class="kidMask">兒童口罩<span class="kidMaskNumber">100</span></div>
+                </li> -->
+                </ul>
+            </div>
+
+            <div id="map"></div>
+        </div>
+    </div>
+
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="all.js"></script>
+
+</body>
+
+</html>
